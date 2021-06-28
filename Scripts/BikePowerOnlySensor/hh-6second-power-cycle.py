@@ -13,7 +13,7 @@
 from System.Timers import Timer
 import System
 
-eventTimer = Timer(1000) # convert time to milliseconds
+eventTimer = Timer(3000) # convert time to milliseconds
 # sweepPower = sweeper()
 
 # SWEEP CONFIGURATION - Modify the values in the following four lines to change the sweep characteristics
@@ -27,13 +27,7 @@ simulator.InstantaneousPower = 50 # sweepPower.minValue
 toggle = True
 
 def update(sender, args):
-#    self.toggle ^= True
-#    toggle = False if toggle else True
     simulator.InstantaneousPower = 150 if simulator.InstantaneousPower == 50 else 50
-#    if self.toggle:
-#        simulator.InstantaneousPower = 50
-#    else:
-#        simulator.InstantaneousPower = 150
 
 def stopScript():
 #   sweepPower.stop()
