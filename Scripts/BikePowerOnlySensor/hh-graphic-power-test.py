@@ -13,7 +13,7 @@
 from System.Timers import Timer
 import System
 
-rventTimer = Timer(500) # convert time to milliseconds
+eventTimer = Timer(500) # convert time to milliseconds
 # sweepPower = sweeper()
 
 simulator.InstantaneousPower = 0 # sweepPower.minValue
