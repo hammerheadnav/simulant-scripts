@@ -13,8 +13,7 @@
 from System.Timers import Timer
 import System
 
-rventTimer = Timer(1000) # convert time to milliseconds
-# sweepPower = sweeper()
+eventTimer = Timer(1000) # convert time to milliseconds
 
 # SWEEP CONFIGURATION - Modify the values in the following four lines to change the sweep characteristics
 # Make sure that all of these are doubles (use a decimal point!) so that calculations are accurate
@@ -24,7 +23,6 @@ rventTimer = Timer(1000) # convert time to milliseconds
 # # sweepPower.constantTime = 5.0 # Time to spend at a constant speed in the minimum and maximum values, in seconds
 #
 simulator.InstantaneousPower = 50 # sweepPower.minValue
-toggle = True
 
 def update(sender, args):
     simulator.InstantaneousPower = 150 if simulator.InstantaneousPower == 50 else 50
@@ -37,4 +35,3 @@ def stopScript():
 eventTimer.Elapsed += update
 simulator.TurnOn()
 eventTimer.Start()
-# sweepPower.start()
