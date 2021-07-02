@@ -25,7 +25,7 @@ increment = 0
 baseSpeed = 10
 
 simulator.Speed = baseSpeed
-
+simulator.WheelCircumference = 2100
 
 def update(sender, args):
     global increment
