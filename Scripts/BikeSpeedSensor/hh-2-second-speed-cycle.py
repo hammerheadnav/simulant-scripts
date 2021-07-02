@@ -16,6 +16,7 @@ eventTimer = Timer(1000) # convert time to milliseconds
 # Make sure that all of these are doubles (use a decimal point!) so that calculations are accurate
 
 simulator.Speed = 10
+simulator.WheelCircumference = 2100
 
 def update(sender, args):
    simulator.Speed = 30 if simulator.Speed == 10 else 10
