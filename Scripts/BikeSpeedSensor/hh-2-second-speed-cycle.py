@@ -1,4 +1,4 @@
-﻿# This software is subject to the license described in the
+# This software is subject to the license described in the
 # LICENSE_A+SS.txt file included with this software distribution.
 # You may not use this file except in compliance with this license.
 #
@@ -16,7 +16,7 @@ eventTimer = Timer(1000) # convert time to milliseconds
 # Make sure that all of these are doubles (use a decimal point!) so that calculations are accurate
 
 simulator.Speed = 10
-simulator.WheelCircumference = 2100
+simulator.WheelCircumference = 2105
 
 def update(sender, args):
    simulator.Speed = 30 if simulator.Speed == 10 else 10

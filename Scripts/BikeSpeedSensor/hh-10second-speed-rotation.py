@@ -1,4 +1,4 @@
-﻿# This software is subject to the license described in the
+# This software is subject to the license described in the
 # LICENSE_A+SS.txt file included with this software distribution.
 # You may not use this file except in compliance with this license.
 #
@@ -25,7 +25,7 @@ increment = 0
 baseSpeed = 10
 
 simulator.Speed = baseSpeed
-simulator.WheelCircumference = 2100
+simulator.WheelCircumference = 2105
 
 def update(sender, args):
     global increment
